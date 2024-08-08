@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 ;
+
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: normal;
+    color: #191970;
+    background: #FDF5E6;
+}
+
+h1,h2,h3{
+    padding: 10px 0;
+}
+
+li{
+    margin-left: 18px;
+}
+
+a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: maroon;
+    text-decoration: none;
+}
+
+a:visited{
+    color:red
+}
+
+a:hover{
+    color: rgb(140, 151, 255);
+}
+
+a:active{
+    color:rgb(38, 0, 255)
+}
+
+
+
+.container{ 
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.avatar{
+    width: 300px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+.info{
+    padding-bottom: 40px;
+    display: flex;
+    gap: 50px;
+    align-items: end;
+}
+
+.info-text{
+    margin: 20px 0;
+}
+
+
+
+.info-text p{
+    font-size: 14px;
+    font-weight: normal;
+    color: #A5A5C5;
+}
+
+
+.card   {
+    border-radius: 60px 20px 60px 20px;
+    background: #A5A5C5;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+}
+
+.hobby{
+    background: linear-gradient(90deg, rgba(255,184,55,1) 38%, rgba(255,233,191,1) 87%, rgba(254,242,219,1) 100%);
+
+}
+
+ol li{
+    padding-bottom: 5px;
+}
+
+.work{
+    background: linear-gradient(90deg, rgba(250,127,250,1) 38%, rgba(255,143,255,1) 87%, rgba(255,225,255,1) 100%);
+}
+
+.contact {
+    background: linear-gradient(90deg, rgb(171, 129, 255) 38%, rgba(183,147,255,1) 87%, rgba(234,224,255,1) 100%);
+    padding-bottom: 20px;
+}
+
+.contact label{
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.contact input {
+    padding: 5px;
+    border-radius: 15px;
+    border: none
+
+}
+.input-field{
+    padding-bottom: 10px;
+}
+
+textarea{
+    margin-top: 10px;
+    padding:10px;
+    border-radius: 15px;
+    border: none
+}
+
+
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 15px;
+    background: rgb(52, 0, 156);
+    color: white;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover{
+transition: all 0.5s;
+background:#5d0092;
+}
+
+.btn:active{
+    background-color: plum;
+    color:black
+}
+
+table {
+    width: 80%;
+
+}
+
+table td{
+    text-align: left;
+    padding: 0 0 5px 0;
+}
+
+table th{
+    text-align: left;
+    padding-bottom: 10px;
+
+}
+
+table td:hover{
+    background: #dea6ff;
+}
+
+
+@media (max-width: 650px) {
+    body{
+        font-size: 14px;
+    }
+    
+    h1,h2,h3{
+        padding: 5px 0;
+    }
+    
+    li{
+        margin-left: 18px;
+    }
+    
+    a {
+        font-size: 14px;
+    }
+
+    .container{ 
+        max-width: 600px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+         .avatar{
+        width: 150px;
+    }
+    .info{
+        gap: 25px;
+    }
+    .contact label{
+        font-size: 16px;
+    }
+    
+    .btn{
+        font-size: 18px;
+    }
+    
+    
+}

@@ -5,80 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Frontend, developing, resume, bio, Anton">
     <meta name="description" content="Этой мой сайт резюме, на котором представлены мои работы.">
+    <link rel="stylesheet" href="style.css">
     <title>Resume</title>
 </head>
 <body>
-    <img src="/img/photo.jpg" alt="myPhoto" width="200px">
-    <h1>Сорокин Антон</h1>
-    <p>Я начинающий <strong>Frontend-разработчик</strong>. Обучаюсь самостоятельно. <strong>Есть несколько пет-проектов</strong>, но, к сожалению, еще не получается устроиться на работу.</р>
-    <p>Очередной раз <em>пытаюсь войти в IT</em>, пока работаю на заводе.</p>
-    <h2>Мои социальные сети:</h2>
-    <P>    
-        <a href="https://vk.com/id103933308" target="_blank">Вконтакте</a> | 
-        <a href="https://t.me/Sorok_Antonov" target="_blank">Telegram</a> | 
-        <a href="https://www.youtube.com/channel/UC_PdIaPBDlqYTd3k8Xef45Q" target="_blank">Youtube</a>
-    </P>
-    <h2>Мои Хобби</h2>
-    <ol>
-        <li>Сноуборд</li>
-        <li>Гейминг</li>
-        <li>Просмотр сериалов</li>
-        <li>Чтение</li>
-        <li>Музыка</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-    <table>
-<thead>
-    <tr>
-    <th>Название</th>
-    <th>Должность</th>
-    <th>Год</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Форт-ИС</td>
-    <td>Слесарь</td>
-    <td>2022 - 2023</td>
-</tr>
-<tr>
-    <td>ТканиLand</td>
-    <td>Разнорабочий</td>
-    <td>2023 - 2023</td>
-</tr>
-<tr>
-    <td>Бетон-Гарант</td>
-    <td>Оператор</td>
-    <td>2023 - н.в</td>
-</tr>
-
-</tbody>
-</table>
-<br />
-
-<h2>Связаться со мной</h2>
-
-<br />
-<form>
-    <div>    
-        <label for="name">Ваше имя:</label>
-        <input id='name' type="text" placeholder="Введите имя">
-    </div>
-    <div>
-        <label for="email">Ваш email:</label>
-        <input id='email' type="email" placeholder="Введите email">    
-    </div>
-    <br />
-    <div>
-        <label for="text">Введите сообщение:</label>
-        <br />
-        <textarea name="text" id="text" placeholder="Введите сообщение..." rows="10" cols="50" ></textarea>
-        
-    </div>
-<br />
-<button type="submit">Отправить</button>
-</form>
-
+    <div class="container">
+        <div class="info">
+            <img class="avatar" src="/img/photo.jpg" alt="myPhoto">
+            <div class="info-text">
+                <h1>Сорокин Антон</h1>
+                <p>Я начинающий <strong>Frontend-разработчик</strong>. Обучаюсь самостоятельно. <strong>Есть несколько пет-проектов</strong>, но, к сожалению, еще не получается устроиться на работу.</р>
+                <p>Очередной раз <em>пытаюсь войти в IT</em>, пока работаю на заводе.</p>
+                <h2>Мои социальные сети:</h2>
+                <P>    
+                    <a href="https://vk.com/id103933308" target="_blank">Вконтакте</a> | 
+                    <a href="https://t.me/Sorok_Antonov" target="_blank">Telegram</a> | 
+                    <a href="https://www.youtube.com/channel/UC_PdIaPBDlqYTd3k8Xef45Q" target="_blank">Youtube</a>
+                </P>
+            </div>
+    
+            </div>
+            <div class="card hobby">
+                <h2>Мои Хобби</h2>
+                <ol>
+                    <li>Сноуборд</li>
+                    <li>Гейминг</li>
+                    <li>Просмотр сериалов</li>
+                    <li>Чтение</li>
+                    <li>Музыка</li>
+                </ol>
+            </div>
+            <div class="card work">
+                <h2>Опыт работы</h2>
+                <table>
+            <thead>
+                <tr>
+                <th>Название</th>
+                <th>Должность</th>
+                <th>Год</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Форт-ИС</td>
+                <td>Слесарь</td>
+                <td>2022 - 2023</td>
+            </tr>
+            <tr>
+                <td>ТканиLand</td>
+                <td>Разнорабочий</td>
+                <td>2023 - 2023</td>
+            </tr>
+            <tr>
+                <td>Бетон-Гарант</td>
+                <td>Оператор</td>
+                <td>2023 - н.в</td>
+            </tr>
+            
+            </tbody>
+            </table>
+        </div>
+    
+        <div class="card contact">
+            <h2>Связаться со мной</h2>
+    
+            <form>
+                <div class="input-field">    
+                    <label for="name">Ваше имя:</label>
+                    <input id='name' type="text" placeholder="Введите имя">
+                </div>
+                <div class="input-field">
+                    <label for="email">Ваш email:</label>
+                    <input id='email' type="email" placeholder="Введите email">    
+                </div>
+                <br />
+                <div class="input-field">
+                    <label for="text">Введите сообщение:</label>
+                    <br />
+                    <textarea name="text" id="text" placeholder="Введите сообщение..." rows="10" cols="50" ></textarea>
+                    
+                </div>
+            <br />
+            <button class="btn"  type="submit">Отправить</button>
+            </form>
+            
+        </div>
+    
+    </container>
 </body>
 </html>
